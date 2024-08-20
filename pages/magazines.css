@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'iran-yekanx';
+    src: url("../assets/fonts/IRANYekanX/Webfonts/woff2/IRANYekanX-Regular.woff2");
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    font-family: iran-yekanx;
+}
