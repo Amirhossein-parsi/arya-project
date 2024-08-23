@@ -2,6 +2,7 @@
     font-family: 'iran-yekanx';
     src: url("../assets/fonts/IRANYekanX/Webfonts/woff2/IRANYekanX-Regular.woff2");
 }
+/**************** general style ******************/
 *,
 *::after,
 *::before{
@@ -9,3 +10,161 @@
     margin: 0;
     font-family: iran-yekanx;
 }
+:root{
+    /* font size */
+    font-size: 62.5%;
+    /* website colors */
+    --Primary-color: #33449C;
+    --Secondary-color: #7C3996;
+    --Trinary-color: #EEEEEE;
+    --Quaternary-color: #878787;
+    --Quinary-color: #FFFFFF;
+    --Senary-color: #000000;
+    --padding-medium : 7rem;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    text-align: right;
+    background-color: inherit;
+    color: var(--Quaternary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--Senary-color);
+}
+ul{
+    list-style: none;
+}
+body{
+    overflow:visible;
+    position: relative;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 40px;
+}
+.section-para{
+    font-weight: 400;
+    font-size: 20px;
+}
+.section-author{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Secondary-color);
+}
+.hidden{
+    display: none !important;
+}
+/**************** general style end ******************/
+
+
+/**************** header style ******************/
+.header__landing{
+    height: 4.8rem;
+    background-color: var(--Primary-color);
+}
+.header__menu{
+    padding: 1.5rem 0;
+    position: sticky;
+    z-index: 50;
+    top: 0;
+}
+.header__menu--upp{
+    display: flex;
+    padding: 0 var(--padding-medium);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+}
+.header__menu--upp__right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.75rem;
+}
+.header__menu--upp__right--search{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+    align-items: center;
+    width: 44rem;
+    height: 4.8rem;
+    background-color: rgba(238, 238, 238, 0.93);
+    border-radius: 1rem;
+}
+.header__menu--upp__right--search__icon{
+    width: 2rem;
+    height: 2rem;
+    color: rgba(135, 135, 135, 1);
+    font-weight: 300;
+}
+.header__menu--upp__right--logo{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.header__menu--upp__right--logo img{
+    width: 100%;
+    height: 100%;
+}
+.header__menu--upp__left{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header__menu--upp__left--icon{
+    width: 2.8rem;
+    height: 2.8rem;
+    color: var(--Primary-color);
+}
+.header__menu--low{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 400;
+    gap: 1.75rem;
+    align-items: center;
+    margin-top: 1.75rem;
+    font-size: 16px;
+    position: relative;
+    padding: 0 var(--padding-medium);
+    z-index: 0;
+}
+.header__menu--low__list--title__lines{
+    color: var(--Senary-color);
+    width: 13.5px;
+    height: 12px;
+}
+.header__menu--low__list--title__lines img{
+    width: 100%;
+    height: 100%;
+}
+.header__menu--low__items{
+    display: flex;
+    background-color: var(--Quinary-color);
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.4rem;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    border: 1px solid var(--Trinary-color);
+    border-radius: 5px;
+}
+.header__menu--low__items__item{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: .5rem;
+    align-items: center;
+}
+.header__menu--low__title{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: .5rem;
+}
+/**************** header style end ******************/
