@@ -59,6 +59,12 @@ body{
 .hidden{
     display: none !important;
 }
+.here{
+    color: var(--Secondary-color);
+}
+.push{
+    transform: translateX(40rem);
+}
 /**************** general style end ******************/
 
 
@@ -75,6 +81,9 @@ body{
     height: 4.8rem;
     width: 100%;
     background-color: var(--Primary-color);
+}
+.header__hamburger{
+    display: none;
 }
 .header__menu{
     padding: 1.5rem 0;
@@ -93,8 +102,12 @@ body{
     z-index: 1;
     position: sticky;
 }
-.here{
-    color: var(--Secondary-color);
+.header__menu--upp__mobile-logo{
+    display: none;
+}
+.header__menu--upp__mobile-bars{
+    color: var(--Primary-color);
+    display: none;
 }
 .header__menu--upp__right{
     display: flex;
@@ -122,9 +135,7 @@ body{
     color: rgba(135, 135, 135, 1);
     font-weight: 300;
 }
-.header__menu--upp__right--mobile-logo{
-    display: none;
-}
+
 .header__menu--upp__right--logo{
     width: 4.8rem;
     height: 4.8rem;
@@ -431,3 +442,119 @@ body{
     height: 48px;
 }
 /**************** footer style end ******************/
+
+/***************************? Responsive ***************************/
+
+@media screen and (max-width : 1000px) {
+
+
+    /**************************** header responsive ******************************/
+    .header__landing{
+        display: none;
+    }
+    .header__menu--upp{
+        display: grid;
+        grid-template-rows: repeat(2,6rem);
+        grid-template-columns: 15% 70% 15%;
+        height: fit-content;
+        padding-bottom: 0;
+    }
+    .header__menu--upp__mobile-logo{
+        display: block;
+        grid-row: 1 / span 1;
+        grid-column: 2 / 3;
+        place-self: center;
+    }
+    .header__menu--upp__mobile-bars{
+        display: block;
+        grid-row: 1 / 2;
+        grid-column: 3 / -1;
+        justify-self: end;
+        align-self: center;
+    }
+    .header__menu--upp__mobile-bars--btn{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    .header__menu--upp__right{
+        flex-wrap: wrap;
+        grid-row: 2 / -1;
+        grid-column: 1 / -1;
+    }
+    .header__menu--upp__right--search{
+        flex-basis: 100%;
+    }
+    .header__menu--upp__right--logo{
+        display: none;
+    }
+    .header__menu--upp__left{
+        justify-content: baseline;
+        align-items: baseline;
+        height: fit-content;
+        grid-row: 1 / 2;
+        grid-column: 1/2;
+        justify-self: start;
+        align-self: center;
+    }
+    .fa-circle-user{    /*removing profile icon*/
+        display: none;
+    }
+    .header__menu--low{
+        display: none;
+    }
+    .header__hamburger{
+        position: absolute;
+        box-shadow: -4px 4px 20px 0px rgba(0, 0, 0, 0.12);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 4rem 3rem;
+        padding-top: 6rem;
+        width: 20rem;
+        height: 100vh;
+        background-color: var(--Quinary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 60;
+        overflow: scroll;
+        transition: all 0.5s ease-in;
+    }
+    .header__hamburger--items{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+    .header__hamburger--items__profile{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1rem;
+    }
+    .header__hamburger--items__item{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
+        text-align: right;
+        gap: 1.6rem;
+    }
+    .header__hamburger--items li{
+        border-bottom: 2px solid rgba(217, 217, 217, 0.7);
+        padding-bottom: 3vh;        
+    }
+    .header__hamburger--items__item:last-child{
+        border-bottom: none;
+    }
+    .header__hamburger--cancel__btn{
+        position: absolute;
+        color: var(--Primary-color);
+        top: 2rem;
+        right: 2rem;
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    /**************************** header responsive end ******************************/
+}
+
+
+/***************************? Responsive end ***************************/
