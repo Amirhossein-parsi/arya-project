@@ -19,7 +19,9 @@ articles.addEventListener('click', function(){
 })
 bar.addEventListener('click', function(){
     hamburgerMenu.classList.remove('push');
+    hamburgerMenu.classList.remove('hidden');
 })
 cancel.addEventListener('click', function(){
     hamburgerMenu.classList.add('push');
+    hamburgerMenu.classList.add('hidden');
 })

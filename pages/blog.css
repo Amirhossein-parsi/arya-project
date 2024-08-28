@@ -21,6 +21,7 @@ input[type="submit"]{
 /************* blog style *************/
 .article{
     padding: 0 var(--padding-medium);
+    position: relative;
 }
 .article__blog{
     display: flex;
@@ -232,5 +233,19 @@ input[type="submit"]{
         font-size: 12px;
         font-weight: 400;
     }
+
+
+    /**************************** Download responsive ******************************/
+    .article__download{
+        display: none;
+    }
+    /**************************** Download responsive end ******************************/
+
+
+    /**************************** Rating responsive ******************************/
+    .article__rating{
+        display: none;
+    }
+    /**************************** Rating responsive end ******************************/
 }
 /***************************? Responsive end ***************************/
