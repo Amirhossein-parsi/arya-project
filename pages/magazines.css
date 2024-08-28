@@ -113,11 +113,17 @@ body{
     background-color: rgba(238, 238, 238, 0.93);
     border-radius: 1rem;
 }
+.header__menu--upp__right--search__bar{
+    width: 100%;
+}
 .header__menu--upp__right--search__icon{
     width: 2rem;
     height: 2rem;
     color: rgba(135, 135, 135, 1);
     font-weight: 300;
+}
+.header__menu--upp__right--mobile-logo{
+    display: none;
 }
 .header__menu--upp__right--logo{
     width: 4.8rem;

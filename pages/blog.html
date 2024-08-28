@@ -1,381 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./magazines.css" />
-    <link rel="stylesheet" href="./blog.css" />
-    <script src="../assets/icon/all.js"></script>
-    <title>Blog</title>
-  </head>
-  <body>
-    <!------------ header ----------->
-    <div class="header__landing"></div>
-    <nav class="header">
-      <section class="header__menu">
-        <nav class="header__menu--upp">
-          <div class="header__menu--upp__right">
-            <figure class="header__menu--upp__right--logo">
-              <a href="#" class="header__menu--upp__right--logo"
-                ><img
-                  src="../assets/img/header/main-logo.svg"
-                  loading="lazy"
-                  alt="logo"
-              /></a>
-            </figure>
-            <form class="header__menu--upp__right--search">
-              <input
-                type="text"
-                placeholder="جستوجو"
-                class="header__menu--upp__search--bar"
-              />
-              <i
-                class="fa-solid fa-magnifying-glass header__menu--upp__right--search__icon"
-              ></i>
-            </form>
-          </div>
-          <div class="header__menu--upp__left">
-            <i
-              class="fa-regular fa-circle-user header__menu--upp__left--icon"
-            ></i>
-            <i
-              class="fa-regular fa-cart-shopping header__menu--upp__left--icon"
-            ></i>
-          </div>
-        </nav>
-        <nav class="header__menu--low">
-          <div class="header__menu--low__items hidden">
-            <a href="#" class="header__menu--low__items__item"
-              >لوازم برقی <i class="fa-regular fa-chevron-left"></i
-            ></a>
-            <a href="#" class="header__menu--low__items__item"
-              >انواع باطری <i class="fa-regular fa-chevron-left"></i
-            ></a>
-            <a href="#" class="header__menu--low__items__item"
-              >نور و روشنایی <i class="fa-regular fa-chevron-left"></i
-            ></a>
-            <a href="#" class="header__menu--low__items__item"
-              >ذخیره سازی <i class="fa-regular fa-chevron-left"></i
-            ></a>
-            <a href="#" class="header__menu--low__items__item"
-              >لوازم جانبی موبایل <i class="fa-regular fa-chevron-left"></i
-            ></a>
-          </div>
-          <a href="#" class="header__menu--low__nav header__menu--low__title">
-            <i class="fa-solid fa-bars"></i>
-            لیست محصولات
-          </a>
-          <a href="#" class="header__menu--low__nav">خرید عمده</a>
-          <a href="./magazines.html" class="header__menu--low__nav">مقالات</a>
-          <a href="#" class="header__menu--low__nav">درباره ما</a>
-          <a href="#" class="header__menu--low__nav">ارتباط با ما</a>
-        </nav>
-      </section>
-    </nav>
-    <!------------ header end ----------->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./magazines.css" />
+  <link rel="stylesheet" href="./blog.css" />
+  <script src="../assets/icon/all.js"></script>
+  <title>Blog</title>
+</head>
+
+<body>
+  <!------------ header ----------->
+  <div class="header__landing"></div>
+  <nav class="header">
+    <section class="header__menu">
+      <nav class="header__menu--upp">
+        <div class="header__menu--upp__right">
+          <figure class="header__menu--upp__right--mobile-logo"><img src="../assets/img/header/main-logo-large.svg" alt=""></figure>
+          <figure class="header__menu--upp__right--logo">
+            <a href="#" class="header__menu--upp__right--logo"><img src="../assets/img/header/main-logo.svg"
+                loading="lazy" alt="logo" /></a>
+          </figure>
+          <form class="header__menu--upp__right--search">
+            <input type="text" placeholder="جستوجو" class="header__menu--upp__right--search__bar" />
+            <i class="fa-solid fa-magnifying-glass header__menu--upp__right--search__icon"></i>
+          </form>
+        </div>
+        <div class="header__menu--upp__left">
+          <a href="#"><i class="fa-regular fa-circle-user header__menu--upp__left--icon"></i></a>
+          <a href="#"><i class="fa-regular fa-cart-shopping header__menu--upp__left--icon"></i></a>
+        </div>
+      </nav>
+      <nav class="header__menu--low">
+        <div class="header__menu--low__items hidden">
+          <a href="#" class="header__menu--low__items__item">لوازم برقی <i class="fa-regular fa-chevron-left"></i></a>
+          <a href="#" class="header__menu--low__items__item">انواع باطری <i class="fa-regular fa-chevron-left"></i></a>
+          <a href="#" class="header__menu--low__items__item">نور و روشنایی <i
+              class="fa-regular fa-chevron-left"></i></a>
+          <a href="#" class="header__menu--low__items__item">ذخیره سازی <i class="fa-regular fa-chevron-left"></i></a>
+          <a href="#" class="header__menu--low__items__item">لوازم جانبی موبایل <i
+              class="fa-regular fa-chevron-left"></i></a>
+        </div>
+        <a href="#" class="header__menu--low__nav header__menu--low__title">
+          <i class="fa-solid fa-bars"></i>
+          لیست محصولات
+        </a>
+        <a href="#" class="header__menu--low__nav">خرید عمده</a>
+        <a href="./magazines.html" class="header__menu--low__nav">مقالات</a>
+        <a href="#" class="header__menu--low__nav">درباره ما</a>
+        <a href="#" class="header__menu--low__nav">ارتباط با ما</a>
+      </nav>
+    </section>
+  </nav>
+  <!------------ header end ----------->
 
 
-    <!------------ article ---------------->
-    <main class="article">
-        <!------------ post ----------->
-        <section class="article__blog">
-            <section class="article__blog--post">
-            <div class="article__blog--post__details">
-              <div class="article__blog--post__details--upp">
-                <h2 class="article__blog--post__details--upp__title">نام مقاله</h2>
-              </div>
-              <div class="article__blog--post__details--low">
-                <div class="article__blog--post__details--low__right">
-                  <p class="article__blog--post__details--low__right--para">نام نویسنده</p>
-                  <p class="article__blog--post__details--low__right--para">
-                    ... / .../ ..... :تاریخ انتشار مقاله
-                  </p>
-                </div>
-                <div class="article__blog--post__details--low__left">
-                  <i
-                    class="fa-solid fa-heart article__blog--post__details--low__left--icon"
-                  ></i>
-                  <i
-                    class="fa-regular fa-share-nodes article__blog--post__details--low__left--icon"
-                  ></i>
-                </div>
-              </div>
+  <!------------ article ---------------->
+  <main class="article">
+    <!------------ post ----------->
+    <section class="article__blog">
+      <section class="article__blog--post">
+        <div class="article__blog--post__details">
+          <div class="article__blog--post__details--upp">
+            <h2 class="article__blog--post__details--upp__title">نام مقاله</h2>
+          </div>
+          <div class="article__blog--post__details--low">
+            <div class="article__blog--post__details--low__right">
+              <p class="article__blog--post__details--low__right--para">نام نویسنده</p>
+              <p class="article__blog--post__details--low__right--para">
+                ... / .../ ..... :تاریخ انتشار مقاله
+              </p>
             </div>
-            <div class="article__blog--post__content">
-              <figure class="article__blog--post__content--img">
-                <img src="../assets/img/magazine/boxes.jpg" alt="" />
-              </figure>
-              <p class="article__blog--post__content--para">
-                متن مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود .متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.
-              </p>
-              <figure class="article__blog--post__content--img">
-                <img src="../assets/img/magazine/boxes.jpg" alt="" />
-              </figure>
-              <p class="article__blog--post__content--para">
-                متن مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود .متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
-                مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.
-              </p>
-                </div>
-            </section>
-
-            <!----------------- products -------------->
-            <aside class="article__blog--items">
-                <div class="article__blog--items__card">
-                  <figure class="article__blog--items__card--img">
-                    <img src="../assets/img/magazine/hard.jpg" alt="" />
-                  </figure>
-                  <div class="article__blog--items__card--content">
-                    <p class="article__blog--items__card--content__rating">
-                      4.1 <i class="fa-solid fa-star article__blog--items__card--content__rating"></i>
-                    </p>
-                    <h3 class="article__blog--items__card--content__title">
-                      هارد اکسترنال <span>western digital</span>
-                    </h3>
-                    <p class="article__blog--items__card--content__stock">موجودی:10</p>
-                    <p class="article__blog--items__card--content__price">100.000تومان</p>
-                    <p class="article__blog--items__card--content__discount">80.000تومان</p>
-                  </div>
-                  <input type="submit" value="افزودن به سبد خرید" class="article__blog--items__card--btn" />
-                </div>
-                <div class="article__blog--items__card">
-                  <figure class="article__blog--items__card--img">
-                    <img src="../assets/img/magazine/hard.jpg" alt="" />
-                  </figure>
-                  <div class="article__blog--items__card--content">
-                    <p class="article__blog--items__card--content__rating">
-                      4.1 <i class="fa-solid fa-star hi article__blog--items__card--content__rating"></i>
-                    </p>
-                    <h3 class="article__blog--items__card--content__title">
-                      هارد اکسترنال <span>western digital</span>
-                    </h3>
-                    <p class="article__blog--items__card--content__stock">موجودی:10</p>
-                    <p class="article__blog--items__card--content__price">100.000تومان</p>
-                    <p class="article__blog--items__card--content__discount">80.000تومان</p>
-                  </div>
-                  <input type="submit" value="افزودن به سبد خرید" class="article__blog--items__card--btn" />
-                </div>
-            </aside>
-            <!----------------- products -------------->
-
-        </section>
-        <!------------ post end ----------->
-
-
-        <!------------ Download ----------->
-        <section class="article__download">
-          <p class="download__name">نام نویسنده</p>
-          <input type="submit" class="download__btn" />
-        </section>
-        <!------------ Download end ----------->
-
-
-        <!------------ Rating ----------->
-        <section class="rating">
-          <div class="rating__stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-light fa-star"></i>
+            <div class="article__blog--post__details--low__left">
+              <i class="fa-solid fa-heart article__blog--post__details--low__left--icon"></i>
+              <i class="fa-regular fa-share-nodes article__blog--post__details--low__left--icon"></i>
+            </div>
           </div>
-          <p>میانگین امتیازات 4 / 5</p>
-          <p>تعداد آراء: 10 نفر</p>
-        </section>
-        <!------------ Rating end ----------->
-    </main>
-    <!------------ article end ---------------->
-
-    
-    <!------------ footer ----------->
-    <footer class="footer">
-      <div class="footer__services">
-        <div class="footer__services--item">
-          <figure class="footer__services--item__img">
-            <img src="../assets/img/footer/vector (1).png" alt="" />
-          </figure>
-          <p class="footer__services--item__para">ضمانت سلامت کالا</p>
         </div>
-        <div class="footer__services--item">
-          <figure class="footer__services--item__img">
-            <img src="../assets/img/footer/vector (2).png" alt="" />
+        <div class="article__blog--post__content">
+          <figure class="article__blog--post__content--img">
+            <img src="../assets/img/magazine/boxes.jpg" alt="" />
           </figure>
-          <p class="footer__services--item__para">پشتیبانی آنلاین</p>
-        </div>
-        <div class="footer__services--item">
-          <figure class="footer__services--item__img">
-            <img src="../assets/img/footer/vector (3).png" alt="" />
-          </figure>
-          <p class="footer__services--item__para">خرید آسان</p>
-        </div>
-        <div class="footer__services--item">
-          <figure class="footer__services--item__img">
-            <img src="../assets/img/footer/vector (4).png" alt="" />
-          </figure>
-          <p class="footer__services--item__para">گارانتی محصولات</p>
-        </div>
-      </div>
-      <div class="footer__about">
-        <div class="footer__about--intro">
-          <p class="footer__about--intro__para section-para">
-            شرکت آریا در سال 1382 فعالیت خود را با هدف ارائه خدمات و کارآفرینی و
-            ایجاد شغل برای جوانان با تاکید بر محصولات رسانه ای من جمله سی دی، دی
-            وی دی، فلش و باتری، فعالیت خود را به صورت مختصر آغاز نموده و در
-            ادامه با تمرکز بر فروش مویرگی خود در استان های تهران و کرج و بنابر
-            سیاست برطرف سازی حداکثری نیاز مشتریان خود با تامین محصولات کالای
-            برقی و جانبی موبایل و کامپیوتر و ابزارآلات به عنوان اولین شرکت پخش
-            مویرگی پیشرو در این حوزه جایگاه مناسبی را به خود اختصاص داده است.
+          <p class="article__blog--post__content--para">
+            متن مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود .متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.
           </p>
-          <div class="footer__about--intro__pages">
-            <figure class="footer__about--intro__pages--img">
-              <img src="../assets/img/footer/eanjoman.png" alt="" />
-            </figure>
-            <figure class="footer__about--intro__pages--img">
-              <img src="../assets/img/footer/samandehi.png" alt="" />
-            </figure>
-            <figure class="footer__about--intro__pages--img">
-              <img src="../assets/img/footer/eNAMAD.png" alt="" />
-            </figure>
-          </div>
+          <figure class="article__blog--post__content--img">
+            <img src="../assets/img/magazine/boxes.jpg" alt="" />
+          </figure>
+          <p class="article__blog--post__content--para">
+            متن مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود .متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود. متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود .متن مقاله در این قسمت نوشته شود.متن
+            مقاله در این قسمت نوشته شود.متن مقاله در این قسمت نوشته شود.
+          </p>
         </div>
-        <div class="footer__about--quick">
-          <ul class="footer__about--quick--list">
-            <h3 class="footer__about--quick--list__title">دسترسی سریع</h3>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>خدمات پس از فروش</li>
-            </a>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>خرید عمده</li>
-            </a>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>شرکای تجاری</li>
-            </a>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>درباره ما</li>
-            </a>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>نظرسنجی</li>
-            </a>
-            <a href="#" class="footer__about--quick--list__links">
-              <li>مقالات</li>
-            </a>
-          </ul>
-        </div>
-        <div class="footer__about--costumer-service">
-          <ul class="footer__about--costumer-service--list">
-            <h3 class="footer__about--costumer-service--list__title">
-              خدمات مشتریان
-            </h3>
-            <a href="#" class="footer__about--costumer-service--list__links">
-              <li>ثبت نظرات شما</li>
-            </a>
-            <a href="#" class="footer__about--costumer-service--list__links">
-              <li>پیگیری سفارشات</li>
-            </a>
-            <a href="#" class="footer__about--costumer-service--list__links">
-              <li>پرسش‌های متداول</li>
-            </a>
-            <a href="#" class="footer__about--costumer-service--list__links">
-              <li>حریم خصوصی</li>
-            </a>
-          </ul>
-        </div>
-        <div class="footer__about--icons">
-          <i class="fa-solid fa-phone"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-        </div>
-      </div>
-    </footer>
-    <!------------ footer end ----------->
+      </section>
 
-    <script src="../app.js"></script>
-  </body>
-</html>
-
-<!-- <main>
-  <nav></nav>
-  <header></header>
-  <section>
-    <div>
-      <figure><img src="" alt="" srcset="" /></figure>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-          perferendis consequatur quis quisquam cupiditate quasi voluptas, iste
-          est eius animi, nihil veritatis harum asperiores ducimus dolore quia
-          modi incidunt culpa quod? Eos, mollitia rerum. Cum, magni asperiores
-          rem veritatis adipisci accusantium. Dolor ducimus iste tenetur
-          quibusdam quo tempore atque illo ab unde natus quos facere illum
-          ratione laboriosam, consequatur exercitationem qui excepturi dolores
-          ea sequi fuga modi voluptatibus odio dicta? Sit mollitia nisi iste
-          culpa aliquid ullam suscipit tempore consequuntur? Voluptatum
-          repellendus esse perspiciatis quam cum itaque cumque ex, cupiditate
-          nisi illum sint quae iste obcaecati repellat consequuntur! Ipsam iure
-          nesciunt magni totam accusamus, cum corrupti dolore pariatur laborum
-          veniam facere, quas eos non nisi maxime error tenetur cumque natus
-          neque minima ullam quaerat accusantium debitis. Atque necessitatibus
-          quisquam omnis quasi vero placeat commodi quis cumque iusto, natus
-          cupiditate quaerat dolore, culpa, et provident eius? Dolorum nobis
-          sequi aperiam eius, soluta laudantium quidem aspernatur quae quis
-          explicabo ad harum ipsa molestias facere assumenda optio, id et atque.
-          Sunt tempore in eum non nostrum nobis, animi tenetur totam eius ad,
-          quod ex molestias fugiat cumque deserunt. Eaque veritatis saepe
-          suscipit assumenda sed fuga odit ea, repellendus officiis vel tempora
-          soluta velit!
-        </p>
-      </div>
-        <figure><img src="" alt="" srcset="" /></figure>
-        <div>
-            <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt,
-            perferendis consequatur quis quisquam cupiditate quasi voluptas, iste
-            est eius animi, nihil veritatis harum asperiores ducimus dolore quia
-            modi incidunt culpa quod? Eos, mollitia rerum. Cum, magni asperiores
-            rem veritatis adipisci accusantium. Dolor ducimus iste tenetur
-            quibusdam quo tempore atque illo ab unde natus quos facere illum
-            ratione laboriosam, consequatur exercitationem qui excepturi dolores
-            ea sequi fuga modi voluptatibus odio dicta? Sit mollitia nisi iste
-            culpa aliquid ullam suscipit tempore consequuntur? Voluptatum
-            repellendus esse perspiciatis quam cum itaque cumque ex, cupiditate
-            nisi illum sint quae iste obcaecati repellat consequuntur! Ipsam iure
-            nesciunt magni totam accusamus, cum corrupti dolore pariatur laborum
-            veniam facere, quas eos non nisi maxime error tenetur cumque natus
-            neque minima ullam quaerat accusantium debitis. Atque necessitatibus
-            quisquam omnis quasi vero placeat commodi quis cumque iusto, natus
-            cupiditate quaerat dolore, culpa, et provident eius? Dolorum nobis
-            sequi aperiam eius, soluta laudantium quidem aspernatur quae quis
-            explicabo ad harum ipsa molestias facere assumenda optio, id et atque.
-            Sunt tempore in eum non nostrum nobis, animi tenetur totam eius ad,
-            quod ex molestias fugiat cumque deserunt. Eaque veritatis saepe
-            suscipit assumenda sed fuga odit ea, repellendus officiis vel tempora
-            soluta velit!
+      <!----------------- products -------------->
+      <aside class="article__blog--items">
+        <div class="article__blog--items__card">
+          <figure class="article__blog--items__card--img">
+            <img src="../assets/img/magazine/hard.jpg" alt="" />
+          </figure>
+          <div class="article__blog--items__card--content">
+            <p class="article__blog--items__card--content__rating">
+              4.1 <i class="fa-solid fa-star article__blog--items__card--content__rating"></i>
             </p>
+            <h3 class="article__blog--items__card--content__title">
+              هارد اکسترنال <span>western digital</span>
+            </h3>
+            <p class="article__blog--items__card--content__stock">موجودی:10</p>
+            <p class="article__blog--items__card--content__price">100.000تومان</p>
+            <p class="article__blog--items__card--content__discount">80.000تومان</p>
+          </div>
+          <input type="submit" value="افزودن به سبد خرید" class="article__blog--items__card--btn" />
         </div>
-    </div>
-    <aside>
+        <div class="article__blog--items__card">
+          <figure class="article__blog--items__card--img">
+            <img src="../assets/img/magazine/hard.jpg" alt="" />
+          </figure>
+          <div class="article__blog--items__card--content">
+            <p class="article__blog--items__card--content__rating">
+              4.1 <i class="fa-solid fa-star hi article__blog--items__card--content__rating"></i>
+            </p>
+            <h3 class="article__blog--items__card--content__title">
+              هارد اکسترنال <span>western digital</span>
+            </h3>
+            <p class="article__blog--items__card--content__stock">موجودی:10</p>
+            <p class="article__blog--items__card--content__price">100.000تومان</p>
+            <p class="article__blog--items__card--content__discount">80.000تومان</p>
+          </div>
+          <input type="submit" value="افزودن به سبد خرید" class="article__blog--items__card--btn" />
+        </div>
+      </aside>
+      <!----------------- products -------------->
 
-    </aside>
-  </section>
-  <section></section>
-  <section></section>
-  <footer></footer>
-</main> -->
+    </section>
+    <!------------ post end ----------->
+
+
+    <!------------ Download ----------->
+    <section class="article__download">
+      <p class="article__download--name">نام نویسنده مقاله</p>
+      <input type="submit" class="article__download--btn" value="دانلود نسخه پی دی اف مقاله" />
+    </section>
+    <!------------ Download end ----------->
+
+
+    <!------------ Rating ----------->
+    <section class="article__rating">
+      <div class="article__rating--stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-light fa-star"></i>
+      </div>
+      <p class="article__rating--avarage">میانگین امتیازات 4 / 5</p>
+      <p class="article__rating--number">تعداد آراء: 10 نفر</p>
+    </section>
+    <!------------ Rating end ----------->
+  </main>
+  <!------------ article end ---------------->
+
+
+  <!------------ footer ----------->
+  <footer class="footer">
+    <div class="footer__services">
+      <div class="footer__services--item">
+        <figure class="footer__services--item__img">
+          <img src="../assets/img/footer/vector (1).png" alt="" />
+        </figure>
+        <p class="footer__services--item__para">ضمانت سلامت کالا</p>
+      </div>
+      <div class="footer__services--item">
+        <figure class="footer__services--item__img">
+          <img src="../assets/img/footer/vector (2).png" alt="" />
+        </figure>
+        <p class="footer__services--item__para">پشتیبانی آنلاین</p>
+      </div>
+      <div class="footer__services--item">
+        <figure class="footer__services--item__img">
+          <img src="../assets/img/footer/vector (3).png" alt="" />
+        </figure>
+        <p class="footer__services--item__para">خرید آسان</p>
+      </div>
+      <div class="footer__services--item">
+        <figure class="footer__services--item__img">
+          <img src="../assets/img/footer/vector (4).png" alt="" />
+        </figure>
+        <p class="footer__services--item__para">گارانتی محصولات</p>
+      </div>
+    </div>
+    <div class="footer__about">
+      <div class="footer__about--intro">
+        <p class="footer__about--intro__para section-para">
+          شرکت آریا در سال 1382 فعالیت خود را با هدف ارائه خدمات و کارآفرینی و
+          ایجاد شغل برای جوانان با تاکید بر محصولات رسانه ای من جمله سی دی، دی
+          وی دی، فلش و باتری، فعالیت خود را به صورت مختصر آغاز نموده و در
+          ادامه با تمرکز بر فروش مویرگی خود در استان های تهران و کرج و بنابر
+          سیاست برطرف سازی حداکثری نیاز مشتریان خود با تامین محصولات کالای
+          برقی و جانبی موبایل و کامپیوتر و ابزارآلات به عنوان اولین شرکت پخش
+          مویرگی پیشرو در این حوزه جایگاه مناسبی را به خود اختصاص داده است.
+        </p>
+        <div class="footer__about--intro__pages">
+          <figure class="footer__about--intro__pages--img">
+            <img src="../assets/img/footer/eanjoman.png" alt="" />
+          </figure>
+          <figure class="footer__about--intro__pages--img">
+            <img src="../assets/img/footer/samandehi.png" alt="" />
+          </figure>
+          <figure class="footer__about--intro__pages--img">
+            <img src="../assets/img/footer/eNAMAD.png" alt="" />
+          </figure>
+        </div>
+      </div>
+      <div class="footer__about--quick">
+        <ul class="footer__about--quick--list">
+          <h3 class="footer__about--quick--list__title">دسترسی سریع</h3>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>خدمات پس از فروش</li>
+          </a>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>خرید عمده</li>
+          </a>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>شرکای تجاری</li>
+          </a>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>درباره ما</li>
+          </a>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>نظرسنجی</li>
+          </a>
+          <a href="#" class="footer__about--quick--list__links">
+            <li>مقالات</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer__about--costumer-service">
+        <ul class="footer__about--costumer-service--list">
+          <h3 class="footer__about--costumer-service--list__title">
+            خدمات مشتریان
+          </h3>
+          <a href="#" class="footer__about--costumer-service--list__links">
+            <li>ثبت نظرات شما</li>
+          </a>
+          <a href="#" class="footer__about--costumer-service--list__links">
+            <li>پیگیری سفارشات</li>
+          </a>
+          <a href="#" class="footer__about--costumer-service--list__links">
+            <li>پرسش‌های متداول</li>
+          </a>
+          <a href="#" class="footer__about--costumer-service--list__links">
+            <li>حریم خصوصی</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer__about--icons">
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </footer>
+  <!------------ footer end ----------->
+
+  <script src="../app.js"></script>
+</body>
+
+</html>

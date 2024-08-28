@@ -166,3 +166,55 @@ input[type="submit"]{
     text-align: right;
 }
 /************* blog style end *************/
+
+
+/************* Download style *************/
+.article__download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 50rem;
+    margin: 5rem 0;
+    gap: 2.5rem;
+    border: 2px solid rgba(202, 202, 202, 1);
+    border-radius: 16px;
+    border-style: dashed;
+}
+.article__download--name{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 3.1rem;
+    text-align: justify;
+}
+.article__download--btn{
+    padding: 1.2rem 2rem;
+    background-color: var(--Secondary-color);
+    color: var(--Quinary-color);
+    border-radius: 20px;
+}
+/************* Download style end *************/
+
+
+/************* Rating style *************/
+.article__rating--avarage{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+}
+.article__rating--number{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.1rem;
+    text-align: center;
+}
+.article__rating--stars{
+    text-align: center;
+    padding: 2rem 0;
+}
+.article__rating--stars *{
+    font-size: 30px;
+    color: rgba(250, 165, 0, 1);
+}
+/************* Rating style end *************/
