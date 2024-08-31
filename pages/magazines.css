@@ -208,6 +208,7 @@ body{
     padding: 0 var(--padding-medium);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .magazine__popular{
     display: flex;
