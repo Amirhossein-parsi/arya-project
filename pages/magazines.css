@@ -42,6 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow-x: hidden;
 }
 .section-title{
     font-weight: 700;
@@ -207,7 +208,6 @@ body{
     padding: 0 var(--padding-medium);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 .magazine__popular{
     display: flex;
@@ -239,7 +239,8 @@ body{
 }
 .magazine__popular--cards{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(300px,1fr));
     gap: 2rem;
 }
 .magazine__popular--cards__card{
@@ -573,6 +574,25 @@ body{
     /**************************** header responsive end ******************************/
 
 
+    /**************************** magazines responsive ******************************/
+    .magazine__latest{
+        display: none !important;
+    }
+    .magazine__popular--title{
+        align-self: center;
+        width: 50vw;
+        text-align: center;
+    }
+    .magazine__popular--title::before{
+        display: none;
+    }
+    .magazine__popular--cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /**************************** magazines responsive end ******************************/
+
+
     /**************************** services responsive ******************************/
     .services{
         position: initial;
@@ -584,15 +604,20 @@ body{
     .services__item{
         flex-basis: 40%;
     }
+    .magazine__popular--cards__card{
+        flex-basis: 100%;
+        width: 100%;
+    }
     /**************************** services responsive end ******************************/
 
 
     /**************************** footer responsive ******************************/
     .footer{
         display: grid;
-        grid-template-rows: repeat(autofill, minmax(300px, 1fr));
-        grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+        grid-template-rows: repeat(3, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
         gap: 2rem;
+        padding-top: 5rem;
     }
     .footer__about--intro{
         grid-row: 1 / 2;
@@ -615,24 +640,89 @@ body{
         position: initial;
         grid-row: 3 / 4;
         grid-column: 1 / -1;
-        width: auto;
+        justify-content: center;
+    }
+    .footer__about--intro__pages--img{
+        width: 25% !important;
+        height: 33%;
         justify-content: space-between;
     }
-    .footer__about--intro__pages *{
-        width: 25%;
-    }
-    .footer__about--intro__pages * img{
+    .footer__about--intro__pages--img img{
         width: 100%;
         height: 100%;
+        align-self: center;
     }
     .footer__about--costumer-service--list__title{
         font-size: 1.6rem;
     }
-    .footer__about--costumer-service--list__link{
+    .footer__about--costumer-service--list__links{
         font-size: 1rem;
+    }
+    .footer__about--quick--list__title{
+        font-size: 1.6rem;
+    }
+    .footer__about--quick--list__links{
+        font-size: 1rem;
+    }
+    .footer__about--icons{
+        font-size: 1rem;
+        gap: 2rem;
+        height: fit-content;
+    }
+    .footer__about--icons__icon{
+        font-weight: 200;
+        font-size: 1px;
     }
     /**************************** footer responsive end ******************************/
 
 
+}
+@media screen and (max-width : 500px) {
+    .magazine{
+        padding: 3rem;
+    }
+    .magazine__popular--title{
+        word-wrap: normal;
+        height: 5rem;
+    }
+    .magazine__popular--cards__card{
+        width: 31rem;
+        height: 12rem;
+        padding: .8rem;
+        border-radius: .8rem;
+        opacity: 0px;
+        align-self: center;
+    }
+    .magazine__popular--cards__card--img{
+        width: 10.4rem;
+        max-height: 10.4rem;
+        overflow: hidden;
+        border-radius: 4px;
+        padding: 0;
+    }
+    .magazine__popular--cards__card--img img{
+        border-radius: 4px;
+    }
+    .magazine__popular--cards__card--content__title{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: right;
+    }
+    .magazine__popular--cards__card--content__para{
+        width: 18rem;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        overflow: hidden; 
+    }
+    .magazine__popular--cards__card--content__author{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+    }
+    .services__item{
+        flex-basis: 100%;
+    }
 }
 /***************************? Responsive end ***************************/
