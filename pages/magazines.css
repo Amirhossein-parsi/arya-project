@@ -88,10 +88,10 @@ body{
 }
 .header__menu{
     padding: 1.5rem 0;
+    position: sticky;
 }
 .header__menu--upp{
     display: flex;
-    position: fixed;
     background-color: var(--Quinary-color);
     z-index: 50;
     top: 0;
@@ -101,7 +101,6 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
     z-index: 1;
-    position: sticky;
 }
 .header__menu--upp__mobile-logo{
     display: none;
@@ -355,15 +354,16 @@ body{
 /**************** footer style ******************/
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     margin-top: 14.5rem;
     position: relative;
-    padding: 0 var(--padding-medium);
     background-color: var(--Primary-color);
+    color: #FFFFFF;
+    padding: 18rem var(--padding-medium);
 }
 
 .footer__about{
-    padding: 18rem 0;
+    position: relative;
     color: #FFFFFF;
     display: flex;
     flex-direction: row-reverse;
@@ -377,15 +377,19 @@ body{
     gap: 2rem;
 }
 .footer__about--intro__para{
-    width: 55.7rem;
+    width: 55rem;
 }
 .footer__about--intro__pages{
     display: flex;
     background-color: #FFFFFF;
+    position: absolute;
+    bottom: 8rem;
     border-radius: 24px;
     align-items: center;
     padding: 1.6rem;
     gap: 2.5rem;
+    width: fit-content;
+    align-self: flex-end;
 }
 .footer__about--intro__pages--img{
     width: 14.6rem;
@@ -448,6 +452,9 @@ body{
     width: 43.66px;
     height: 48px;
 }
+.footer__about--icons__icon{
+    color: var(--Quinary-color);
+}
 /**************** footer style end ******************/
 
 /***************************? Responsive ***************************/
@@ -465,6 +472,8 @@ body{
         grid-template-columns: 15% 70% 15%;
         height: fit-content;
         padding-bottom: 0;
+        padding-top: 0;
+        overflow: hidden;
     }
     .header__menu--upp__mobile-logo{
         display: block;
@@ -510,6 +519,7 @@ body{
         display: none;
     }
     .header__hamburger{
+        display: none;
         position: absolute;
         box-shadow: -4px 4px 20px 0px rgba(0, 0, 0, 0.12);
         right: 0;
@@ -563,8 +573,65 @@ body{
     /**************************** header responsive end ******************************/
 
 
-    /**************************** responsive ******************************/
-    /**************************** responsive end ******************************/
+    /**************************** services responsive ******************************/
+    .services{
+        position: initial;
+        padding-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5rem;
+    }
+    .services__item{
+        flex-basis: 40%;
+    }
+    /**************************** services responsive end ******************************/
+
+
+    /**************************** footer responsive ******************************/
+    .footer{
+        display: grid;
+        grid-template-rows: repeat(autofill, minmax(300px, 1fr));
+        grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    .footer__about--intro{
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        place-self: center;
+    }
+    .footer__about--intro__para{
+        width: 100%;
+        height: 100%;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .footer__about{
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer__about--intro__pages{
+        position: initial;
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        width: auto;
+        justify-content: space-between;
+    }
+    .footer__about--intro__pages *{
+        width: 25%;
+    }
+    .footer__about--intro__pages * img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer__about--costumer-service--list__title{
+        font-size: 1.6rem;
+    }
+    .footer__about--costumer-service--list__link{
+        font-size: 1rem;
+    }
+    /**************************** footer responsive end ******************************/
 
 
 }
